@@ -1,6 +1,6 @@
 {
   "name": "keycloak-angular",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Easy Keycloak setup for Angular applications",
   "main": "index.ts",
   "scripts": {
