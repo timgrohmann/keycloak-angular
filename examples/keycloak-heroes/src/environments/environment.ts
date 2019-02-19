@@ -7,14 +7,17 @@ import { KeycloakConfig } from 'keycloak-angular';
 
 // Add here your keycloak setup infos
 let keycloakConfig: KeycloakConfig = {
-  url: 'KEYCLOAK-INSTANCE-URL',
-  realm: 'REALM-NAME',
-  clientId: 'CLIENT-ID-NAME'
+  url: 'http://localhost:8080/auth',
+  realm: 'keycloak-angular',
+  clientId: 'keycloak-heroes'
 };
 
 export const environment = {
   production: false,
-  assets: { dotaImages: 'https://api.opendota.com/apps/dota2/images' },
-  apis: { dota: 'https://api.opendota.com/api' },
+  assets: {
+    dotaImages:
+      'https://cdn-keycloak-angular.herokuapp.com/assets/images/dota-heroes/'
+  },
+  apis: { dota: 'http://localhost:3000' },
   keycloak: keycloakConfig
 };
